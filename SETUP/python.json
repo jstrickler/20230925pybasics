@@ -55,7 +55,7 @@
 	},
 	"print object newline": {
 		"description": "Print one object followed by an extra newline",
-		"prefix": "pn_]",
+		"prefix": "p+",
 		"body": [
 			"print(f\"${expr}: {${expr}}\\n\")",
 			"$0"
@@ -64,7 +64,7 @@
 
 	"print line": {
 		"description": "print a line of dashes",
-		"prefix": "pd",
+		"prefix": "p-",
 		"body": [
 			"print('-' * 60)",
 			"$0"
@@ -108,13 +108,9 @@
 			"airports = {",
 			"   'EWR': 'Newark',",
 			"   'YYZ': 'Toronto',",
-			"   'SJU': 'San Juan',",
 			"   'MCI': 'Kansas City',",
 			"   'SFO': 'San Francisco',",
 			"   'RDU': 'Raleigh-Durham',",
-			"   'LTN': 'London',  # (Luton)",
-			"   'LGW': 'London',  # (Gatwick)",
-			"   'LHR': 'London',  # (Heathrow)",
 			"   'SJC': 'San Jose',",
 			"   'MCO': 'Orlando',",
 			"   'YCC': 'Calgary',",
@@ -137,6 +133,7 @@
 			"    ('Larry', 'Wall', 'Perl', '1954-09-27'), ",
 			"    ('Paul', 'Allen', 'Microsoft', '1953-01-21'),",
 			"    ('Larry', 'Ellison', 'Oracle', '1944-08-17'),",
+			"    ('Grace', 'Hopper', 'COBOL', '1906-12-09'),",
 			"    ('Bill', 'Gates', 'Microsoft', '1955-10-28'),",
 			"    ('Thomas', 'Kurtz', 'BASIC', '1928-02-28'),",
             "    ('Ada', 'Lovelace', 'Analytical Engine', '1815-12-10'),",

@@ -1,15 +1,10 @@
 """
 Provide a CardDeck object and some utility methods
-
-Usage:
-from cardceck import CardDeck
-c = CardDeck("Dealer-Name")
 """
 import random
-from card import Card
-# or choose one of the following
+# from card_class import Card
 # from card_named_tuple import Card
-# from card_dataclass import Card
+from card_dataclass import Card
 
 class CardDeck:
     """

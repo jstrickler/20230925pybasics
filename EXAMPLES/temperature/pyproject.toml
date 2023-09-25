@@ -2,10 +2,10 @@
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
-# the above is required
+# the above is required 
 
 ##################################################
-# used when only using this file, not setup.cfg
+# useful when only using this file, not setup.cfg
 ##################################################
 
 [project]
@@ -14,7 +14,7 @@ version = "1.0.0"
 authors = [
     { name="John Strickler", email="jstrickler@gmail.com" },
 ]
-description = "Convert C to F and F to C"
+description = "Temperature conversion functions"
 readme = "README.md"
 requires-python = ">=3.0"
 classifiers = [
@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 dependencies = [
-#    'roman >= 3.0',
+    'roman >= 3.0',
 #    'requests[security] < 3',
 #    'subprocess32; python_version < "3.2"',
 ]
@@ -32,8 +32,10 @@ dependencies = [
 #[tool.setuptools]
 #packages=["temperature"]
 
-# [project.scripts]
-# script1='temperature:_cli_script1'
-# script2='temperature:_cli_script2'
+[project.scripts]
+c2f='temperature:convert._c2f_cli'
+f2c='temperature:convert._f2c_cli'
 
+[project.urls]
+"Homepage" = "https://github.com/jstrickler/20221024USGS"
 

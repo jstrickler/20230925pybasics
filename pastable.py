@@ -8,7 +8,7 @@ fruits = ["pomegranate", "cherry", "apricot", "Apple",
 "Papaya", "FIG", "pear", "banana", "Tamarind", "Persimmon",
 "elderberry", "peach", "BLUEberry", "lychee", "GRAPE", "date"]
 
-nums = [800, 80, 1000, 32, 255, 400, 5, 5000]
+nums = [800,80,1000,32,255,400,5,5000]
 
 people = [
     ('Melinda', 'Gates', 'Gates Foundation', '1964-08-15'),
@@ -31,7 +31,6 @@ airports = {
     'EWR': 'Newark',
     'YYZ': 'Toronto',
     'MCI': 'Kansas City',
-    'SJU': 'San Juan',
     'SFO': 'San Francisco',
     'RDU': 'Raleigh-Durham',
     'SJC': 'San Jose',

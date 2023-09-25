@@ -1,5 +1,5 @@
 
-class Simple:  # default base class is object
+class Simple():  # default base class is object
     def __init__(self, message_text):  # constructor
         self._message_text = message_text  # message text stored in instance object
 
