@@ -12,6 +12,7 @@ logging.info("this is information")
 logging.warning("this is a warning")
 logging.error("this is an ERROR")
 value = 38.7
-logging.error("Invalid value %s", value)
+other_value = "snozzcumber"
+logging.error("Invalid value %s %s", value, other_value)
 logging.info("this is information")
 logging.critical("this is critical")

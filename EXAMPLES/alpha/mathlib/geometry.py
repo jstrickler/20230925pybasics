@@ -6,6 +6,9 @@ Syntax:
 area = circle_area(diameter)
 area = rectangle_area(length, width)
 area = square_area(side)
+
+...more details here...
+
 """
 import math   # load math.py
 

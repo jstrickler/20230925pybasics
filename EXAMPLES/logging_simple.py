@@ -5,9 +5,11 @@ logging.basicConfig(
     level=logging.WARNING,
 )
 
-logging.warning('This is a warning') # message will be output
-logging.debug('This message is for debugging') # message will NOT be output
-logging.error('This is an ERROR') # message will be output
-logging.critical('This is ***CRITICAL***') # message will be output
-logging.info('The capital of North Dakota is Bismark') # message will not be output
+logger = logging.getLogger()
+
+logger.warning('This is a warning') # message will be output
+logger.debug('This message is for debugging') # message will NOT be output
+logger.error('This is an ERROR') # message will be output
+logger.critical('This is ***CRITICAL***') # message will be output
+logger.info('The capital of North Dakota is Bismark') # message will not be output
 

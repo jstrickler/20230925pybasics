@@ -1,17 +1,28 @@
 from pprint import pprint
 
-file_path = "DATA/knights.txt"
+FILE_PATH = "DATA/knights.txt"
 
-knight_data = {}
+def main():
+    data = read_data()
+    pretty_print(data)
+    print()
+    print_name_and_color(data)
 
-with open(file_path) as knights_in:
-    for raw_line in knights_in:
-        line = raw_line.rstrip()
-        name, title, color, quest, comment = line.split(':')
-        knight_data[name] = title, color, quest, comment
+def read_data():
+    data = {}
 
-pprint(knight_data, sort_dicts=False)
-print()
+    with open(FILE_PATH) as knights_in:
+        for raw_line in knights_in:
+            line = raw_line.rstrip()
+            name, title, color, quest, comment = line.split(':')
+            data[name] = title, color, quest, comment
+    return data
 
-for name, data in knight_data.items():
-    print(name, data[1])
+def pretty_print(knight_data):
+    pprint(knight_data, sort_dicts=False)
+
+def print_name_and_color(knight_data):
+    for name, data in knight_data.items():
+        print(name, data[1])
+
+main()
